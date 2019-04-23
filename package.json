@@ -1,0 +1,36 @@
+{
+  "name": "sketch",
+  "version": "0.1.0",
+  "description": "pixi sketch",
+  "main": "src/app.js",
+  "private": true,
+  "keywords": [
+    "pixi",
+    "pixi.js",
+    "sketch"
+  ],
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --mode=development --config internals/webpack.config.js",
+    "build": "NODE_ENV=production webpack --mode=production --config internals/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pixi.js": "^5.0.0-rc.2"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "raw-loader": "^1.0.0",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "not ie < 11"
+  ]
+}
